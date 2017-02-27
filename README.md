@@ -1,2 +1,2 @@
 # unix
-unix files
+this repository contains useful unix files
