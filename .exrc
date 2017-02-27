@@ -11,6 +11,8 @@
 "     set eb	noed	Precedes error messages with a bell
 "     set ed	noed	Precedes error messages with a bell
 set errorbells
+"	set hlsearch nohlsearch			highlight search pattern
+set nohlsearch
 "     set ht=	ht = 8	Sets terminal hardware tabs
 "     set ic	noic	Ignores case when searching
 "		set lisp	nolisp	Modifies brackets for Lisp compatibility.
@@ -57,7 +59,10 @@ set tabstop=4
 "
 "		map keys
 "
+"	map F2 key to display the file .vi_help
 map #2 :!more ~/.vi_help
+"	map key escape to clear the highlight search
+nnoremap <silent> <esc> :noh<cr><esc>
 "
 "
 "
@@ -93,8 +98,8 @@ syntax on
 ""
 "" --------------------------
 ""
-"" Abbreviations
-""
+"" define abbreviations, ie replace the first by the second
+"
 "ab het the
 "ab teh the
 ""
