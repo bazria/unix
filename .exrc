@@ -41,6 +41,7 @@ set showmode
 "	set slow	slow	Pospone display updates during inserts
 "	set sm	nosm	Show matching { or ( as ) or } is typed
 "	set sw=n	sw = 8	Sets shift width to n characters
+syntax on
 "	set tab width
 set tabstop=4
 "	set tags=x	tags = /usr/lib/tags	Path for files checked for tags (current directory included in default)
@@ -84,10 +85,5 @@ nnoremap <silent> <esc> :noh<cr><esc>
 "
 ab het the
 ab teh the
-"
-"--------------------------------------------------------------------------------
-"	test
-"
-syntax on
 "
 "--------------------------------------------------------------------------------
