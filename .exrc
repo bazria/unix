@@ -1,15 +1,15 @@
 "--------------------------------------------------------------------------------
-"	vi text editor run command file for bruno azria
-"	do not enter empty lines
-"	start all comments by double quote character (")
+"	vi text editor .exrc (ex run command) file for bruno azria
+"	start all comments by double quote character ("), do not enter empty lines
+"--------------------------------------------------------------------------------
 "
-"	set ai	noai	Turns on auto indentation
-"	set all	--	Prints all options to the screen
-"	set ap	aw	Prints line after d c J m :s t u commands
-"	set aw	noaw	Automatic write on :n ! e# ^^ :rew ^} :tag
+"	set ai	noai					turn on auto indentation
+"	set all							print all options
+"	set ap	ap						print line after d c J m :s t u commands
+"	set aw	noaw					automatic write on :n ! e# ^^ :rew ^} :tag
 "	set bf	nobf	Discards control characters from input
 "	set dir=tmp	dir = /tmp	Sets tmp to directory or buffer file
-"	set eb	noed	Precedes error messages with a bell
+"	set eb	noeb	Precedes error messages with a bell
 "	set ed	noed	Precedes error messages with a bell
 set errorbells
 "	set hlsearch nohlsearch			highlight search pattern
@@ -34,12 +34,11 @@ set number
 "	set ro	noro	Changes file type to "read only"
 "	set scroll=n	scroll = 11	set n lines for CTRL-d and z
 "	set sh=shell_path	sh = /bin/sh	set shell escape (default is /bin/sh) to shell_path
-"	show matching brackets, braces, parentheses
+"	set showmatch noshowmatch				show matching brackets, braces, parentheses
 set showmatch
 "	set showmode	nosm	show input or replace mode in status line 
 set showmode
 "	set slow	slow	Pospone display updates during inserts
-"	set sm	nosm	Show matching { or ( as ) or } is typed
 "	set sw=n	sw = 8	Sets shift width to n characters
 syntax on
 "	set tab width
@@ -50,7 +49,6 @@ set tabstop=4
 "	set timeout		Eliminates one-second time limit for macros
 "	set tl=n	tl = 0	Sets significance of tags beyond n characters (0 means all)
 "	set ts=n	ts = 8	Sets tab stops to n for text input
-set tabstop=4
 "	set wa	nowa	Inhibits normal checks before write commands
 "	set warn	warn		Warns "no write since last change"
 "	set window=n	window = n	Sets number of lines in a text window to n
@@ -59,31 +57,35 @@ set tabstop=4
 "	set ws	ws	Sets automatic wraparound n spaces from right margin.
 "
 "--------------------------------------------------------------------------------
-"	map keys
+"	map key
+"--------------------------------------------------------------------------------
 "
 "	map F2 key to display the file .vi_help
 map #2 :!more ~/.vi_help
 "	map key escape to clear the highlight search
-nnoremap <silent> <esc> :noh<cr><esc>
+"nnoremap <silent> <esc> :noh<cr><esc>
 "	classic vi user community macros for completion based on previous or next instances of a word
 "	in the current buffer that matches the current substring
-"map!  a. hbmmi?\<2h"zdt.@zywmx`mP xi
-"map!  a. hbmmi/\<2h"zdt.@zywmx`mP xi
+"	map!  a. hbmmi?\<2h"zdt.@zywmx`mP xi
+"	map!  a. hbmmi/\<2h"zdt.@zywmx`mP xi
 "	control-b - backward character ala emacs
-"map  h
+"	map  h
 "	control-f - forward character ala emacs
-"map  l
-" control-t - twiddle chars ala emacs
-"map  hxpl
-" F2 - invoke ispell
-"map #2 :w:!ispell -x %:e!
-" F5 - invoke fmt
-"map #5 !}fmt
+"	map  l
+" 	control-t - twiddle chars ala emacs
+"	map  hxpl
+" 	F2 - invoke ispell
+"	map #2 :w:!ispell -x %:e!
+" 	F5 - invoke fmt
+"	map #5 !}fmt
 "
 "--------------------------------------------------------------------------------
-"	define abbreviations, ie replace the first by the second
+"	abbreviation: automatically replace first word by second during typing
+"--------------------------------------------------------------------------------
 "
 ab het the
 ab teh the
 "
+"--------------------------------------------------------------------------------
+"	the end
 "--------------------------------------------------------------------------------
