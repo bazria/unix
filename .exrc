@@ -63,10 +63,12 @@ set tabstop=4
 "
 map #2 :!more ~/.vi_help
 "	map key F2 to print file .vi_help
-"nnoremap <silent> <esc> :noh<cr><esc>
-"	map key escape to clear the highlight search
+"
+"--------------------------------------------------------------------------------
 "	classic vi user community macros for completion based on previous or next instances of a word
 "	in the current buffer that matches the current substring
+"--------------------------------------------------------------------------------
+"
 "	map!  a. hbmmi?\<2h"zdt.@zywmx`mP xi
 "	map!  a. hbmmi/\<2h"zdt.@zywmx`mP xi
 "	control-b - backward character ala emacs
