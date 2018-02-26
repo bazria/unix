@@ -1,5 +1,5 @@
-" vi text editor run command file for bruno azria on walter
-" command or comment, no empty line, either vi command or comment (start line by ")
+" vi text editor run command file for bruno azria on gaston
+" no empty line, either vi command or comment (start line by ")
 "                                                              
 " python-specific options
 "
@@ -61,7 +61,7 @@ set wildignore=*.pyc
 " indent when moving to the next line while writing code
 set autoindent
 " show a visual line under the cursor's current line
-set nocursorline
+set cursorline
 set ignorecase
 set mesg
 set nolisp
